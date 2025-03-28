@@ -4,7 +4,6 @@ modules = ["python-3.11", "web"]
 channel = "stable-24_05"
 
 [workflows]
-runButton = "Run"
 
 [[workflows.workflow]]
 name = "Run"
@@ -12,8 +11,8 @@ author = 40856866
 mode = "sequential"
 
 [[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npx serve -p 8080"
+task = "workflow.run"
+args = "Run"
 
 [[ports]]
 localPort = 8080
