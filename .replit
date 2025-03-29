@@ -1,9 +1,10 @@
-modules = ["python-3.11", "web"]
+modules = ["nodejs-20", "python-3.11", "web"]
 
 [nix]
 channel = "stable-24_05"
 
 [workflows]
+runButton = "Run"
 
 [[workflows.workflow]]
 name = "Run"
@@ -11,8 +12,12 @@ author = 40856866
 mode = "sequential"
 
 [[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "Run"
+task = "shell.exec"
+args = "python -m http.server 5000 --bind 0.0.0.0"
+
+[[ports]]
+localPort = 5000
+externalPort = 5000
 
 [[ports]]
 localPort = 8080
