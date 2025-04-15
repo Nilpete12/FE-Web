@@ -97,13 +97,14 @@
                     </button>
                 </a>
 
-
+                <a href="cart.html">
                 <button id="cart"
                     class="flex items-center space-x-2 px-6 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-full transition-all hover:scale-105">
                     <span class="material-icons">shopping_cart</span>
                     <span>Cart</span>
                     <span class="bg-green-500 text-white px-2 rounded-full text-sm">0</span>
                 </button>
+                </a>
             </div>
         </div>
     </header>
@@ -139,25 +140,37 @@
     <div class="relative ">
         <div class="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between">
             <div class="md:w-1/2 mb-12 md:mb-0 space-y-8 ml-10 mr-10">
-                <h1 class="text-5xl font-bold text-gray-800" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="text-5xl font-bold text-gray-800" data-aos="fade-up" data-aos-delay="200">
                     Grow Your Farm with
-                    <span class="text-green-600" data-aos="fade-up" data-aos-delay="100">Premium Supplies📦</span>
+                    <span class="text-green-600" data-aos="fade-up" data-aos-delay="200">Premium Supplies📦</span>
                 </h1>
-                <p class="text-xl text-gray-600" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-xl text-gray-600" data-aos="fade-up" data-aos-delay="400">
                     Everything you need for modern farming - delivered to your doorstep!
                 </p>
                 <a href="LoginSignup.html" id="shopnow"
                     class="inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-full text-lg font-semibold"
-                    data-aos="fade-up" data-aos-delay="100">
+                    data-aos="fade-up" data-aos-delay="600">
                     Shop Now 🛍️➔
                 </a>
 
-
+                <div id="scroll" class="h-[50px] mr-[650px]"   data-aos="fade-up" data-aos-delay="2000"></div>
+            <script>
+                // Load Lottie animation into 
+                lottie.loadAnimation({
+                  container: document.getElementById('scroll'),
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: 'scrollDown.json' // 👉 Replace with your JSON animation path
+                });
+              </script>
             </div>
             <!--lottie animation-->
             <div class=" md:w-1/2 flex justify-center" data-aos="fade-up" data-aos-delay="100">
                 <div id="lottie-animation" class="w-full max-w-lg"></div>
             </div>
+            
+            
         </div>
         <div>
             <script>
@@ -260,7 +273,7 @@
                 class="group shadow-lg border border-gray-300 hover:scale-105 transition-transform duration-300 rounded-lg p-4 bg-white">
                 <p class="px-3 py-1 text-white bg-green-600 w-max rounded-full">Sale</p>
                 <a href="#"><img src="Nutrient1.avif" alt="Nutrient1"
-                        class="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"></a>
+                        class="w-full h-40 object-cover  transition-transform duration-500"></a>
                 <h3 class="text-center font-medium mt-2">Product 1</h3>
                 <p class="text-center text-gray-600">From Rs.300/pack</p>
                 <div class="flex gap-2 mt-3">
@@ -284,7 +297,7 @@
                 class="group shadow-lg border border-gray-300 hover:scale-105 transition-transform duration-300 rounded-lg p-4 bg-white">
                 <p class="px-3 py-1 text-white bg-green-600 w-max rounded-full">Sale</p>
                 <a href="#"><img src="Nutrient7.avif" alt="Nutrient1"
-                        class="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"></a>
+                        class="w-full h-40 object-cover  transition-transform duration-500"></a>
                 <h3 class="text-center font-medium mt-2">Product 2</h3>
                 <p class="text-center text-gray-600">From Rs.300/pack</p>
                 <div class="flex gap-2 mt-3">
@@ -308,7 +321,7 @@
                 class="group shadow-lg border border-gray-300 hover:scale-105 transition-transform duration-300 rounded-lg p-4 bg-white">
                 <p class="px-3 py-1 text-white bg-green-600 w-max rounded-full">Sale</p>
                 <a href="#"><img src="product2.png" alt="Nutrient1"
-                        class="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"></a>
+                        class="w-full h-40 object-cover  transition-transform duration-500"></a>
                 <h3 class="text-center font-medium mt-2">Product 3</h3>
                 <p class="text-center text-gray-600">From Rs.300/pack</p>
                 <div class="flex gap-2 mt-3">
@@ -332,7 +345,7 @@
                 class="group shadow-lg border border-gray-300 hover:scale-105 transition-transform duration-300 rounded-lg p-4 bg-white">
                 <p class="px-3 py-1 text-white bg-green-600 w-max rounded-full">Sale</p>
                 <a href="#"><img src="product4.png" alt="Nutrient1"
-                        class="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"></a>
+                        class="w-full h-40 object-cover  transition-transform duration-500"></a>
                 <h3 class="text-center font-medium mt-2">Product 4</h3>
                 <p class="text-center text-gray-600">From Rs.300/pack</p>
                 <div class="flex gap-2 mt-3">
@@ -356,7 +369,7 @@
                 class="group shadow-lg border border-gray-300 hover:scale-105 transition-transform duration-300 rounded-lg p-4 bg-white">
                 <p class="px-3 py-1 text-white bg-green-600 w-max rounded-full">Sale</p>
                 <a href="#"><img src="product3.png" alt="Nutrient1"
-                        class="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"></a>
+                        class="w-full h-40 object-cover transition-transform duration-500"></a>
                 <h3 class="text-center font-medium mt-2">Product 5</h3>
                 <p class="text-center text-gray-600">From Rs.300/pack</p>
                 <div class="flex gap-2 mt-3">
@@ -477,7 +490,7 @@
 
 
     <!-- Video Gallery -->
-    <div class="flex space-x-[20px] mr-10">
+    <div class="flex space-x-[20px]">
         <video autoplay loop muted playsinline id="mainVideo" src="homeV1.mp4"
             class="w-[700px] h-[400px] ml-[50px] relative mt-[100px] rounded-2xl" data-aos="fade-up-right"
             data-aos-delay="200"></video>
